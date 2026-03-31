@@ -13,7 +13,6 @@
     <title>JM Plumbing | Reliable Local Plumber in Chester - 24/7 Emergency Service</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
     
     <script>
         tailwind.config = {
@@ -921,9 +920,6 @@
     <div class="md:hidden h-24"></div>
 
     <script>
-        // Initialize Lucide Icons
-        lucide.createIcons();
-
         // Mobile Menu Toggle
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -1005,6 +1001,15 @@
             card.style.transform = 'translateY(20px)';
             card.style.transition = `all 0.6s ease ${index * 0.1}s`;
             observer.observe(card);
+        });
+    </script>
+
+    <!-- Load Lucide Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <script>
+        // Initialize Lucide Icons after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
         });
     </script>
 </body>
