@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JM Plumbing - Reliable 24/7 emergency plumber in Chester. Fast, honest, and affordable plumbing services by Jack. Rated 5 stars by 40+ customers. Call 07957 438541.">
+    <meta name="keywords" content="plumber Chester, emergency plumber, 24/7 plumbing, boiler repair, leak detection, radiator repair, JM Plumbing, Jack plumber">
+    <meta name="author" content="JM Plumbing">
+    <meta property="og:title" content="JM Plumbing - Reliable Local Plumber in Chester | 24/7 Emergency Service">
+    <meta property="og:description" content="Fast, honest, and affordable plumbing you can trust. Rated 5 stars by 40+ customers. Available 24/7 for emergencies.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_GB">
+    <title>JM Plumbing | Reliable Local Plumber in Chester - 24/7 Emergency Service</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        },
+                        secondary: '#1f2937',
+                        accent: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-pattern {
+            background-image: linear-gradient(rgba(30, 58, 138, 0.85), rgba(30, 58, 138, 0.85)), url('https://www.vecteezy.com/photo/70853613-plumbing-tools-and-fixtures-laid-out-on-a-work-surface-with-a-plumber-in-the-background');
+            background-size: cover;
+            background-position: center;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .pulse-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            animation: pulse-ring 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.33); }
+            80%, 100% { opacity: 0; }
+        }
+        .sticky-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+    </style>
+</head>
+<body class="smooth-scroll text-gray-800 bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-white shadow-sm" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img src="logo.jpg" alt="JM Plumbing Logo" class="h-12 w-auto">
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary-600 font-medium transition">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary-600 font-medium transition">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-primary-600 font-medium transition">Services</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-primary-600 font-medium transition">Reviews</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary-600 font-medium transition">Contact</a>
+                    
+                    <a href="tel:07957438541" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full font-semibold transition flex items-center gap-2 shadow-lg shadow-primary-500/30">
+                        <i data-lucide="phone" class="h-4 w-4"></i>
+                        07957 438541
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-primary-600 p-2">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-md font-medium">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-md font-medium">About</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-md font-medium">Services</a>
+                <a href="#reviews" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-md font-medium">Reviews</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-primary-50 rounded-md font-medium">Contact</a>
+                <a href="tel:07957438541" class="block px-3 py-3 mt-4 bg-primary-600 text-white text-center rounded-lg font-semibold">
+                    Call Now: 07957 438541
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative hero-pattern min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-white space-y-8">
+                    <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold border border-white/30">
+                        <span class="relative flex h-3 w-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+                        </span>
+                        Available 24/7 for Emergencies
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                        Reliable Local Plumber in <span class="text-blue-200">Chester</span> – 24/7 Emergency Service
+                    </h1>
+                    
+                    <p class="text-xl text-blue-100 max-w-lg">
+                        Fast, honest, and affordable plumbing you can trust. Jack provides expert solutions for all your plumbing needs with no hidden fees.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="tel:07957438541" class="inline-flex justify-center items-center gap-3 bg-white text-primary-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl transform hover:scale-105">
+                            <i data-lucide="phone-call" class="h-5 w-5"></i>
+                            Call Now
+                        </a>
+                        <a href="#contact" class="inline-flex justify-center items-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-primary-700 transition">
+                            <i data-lucide="clipboard-list" class="h-5 w-5"></i>
+                            Request a Quote
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center gap-6 pt-4">
+                        <div class="flex items-center gap-2">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                                <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                                <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                                <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                                <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+                            </div>
+                            <span class="font-semibold">5.0 from 40 reviews</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-blue-200"></i>
+                            <span class="text-sm">Serving Chester & Surrounding Areas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:block relative">
+                    <div class="bg-white p-6 rounded-2xl shadow-2xl max-w-md ml-auto relative z-10">
+                        <div clas<img src="https://scontent.fbrs5-1.fna.fbcdn.net/v/t39.30808-6/261664476_2994484844213930_2500460188599530637_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=LF5m7cxbWt0Q7kNvwEvyXXF&_nc_oc=AdpcCYrM1ystLeTFZYc4B82c047V_1AvSvYS3IlpIR8zY8vYUXhPmOtKjM7ahITwQ7Z9Fnlga4mEgyAPKWdIB8a-&_nc_zt=23&_nc_ht=scontent.fbrs5-1.fna&_nc_gid=QhUj3-WvFM35T6xJrxxumg&_nc_ss=7a30f&oh=00_AfyYjXspxayFJkvQV4R0YNd7kKSr6UmXrIUSqvNe2mWR0g&oe=69C79200" alt="Jack - JM Plumbings="flex items-center gap-4 mb-4">
+                            " class="w-16 h-16 rounded-full object-cover border-4 border-primary-100">
+                            <div>
+                                <h3 class="font-bold text-secondary text-lg">Jack</h3>
+                                <p class="text-primary-600 font-medium">Owner & Master Plumber</p>
+                            </div>
+                        </div>
+                        <div class="space-y-3 text-gray-600">
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+                                <span>10+ years experience</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+                                <span>Fully insured & qualified</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+                                <span>No call-out fees</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i data-lucide="check-circle" class="h-5 w-5 text-green-500 flex-shrink-0"></i>
+                                <span>Fixed price quotes</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-gray-100">
+                            <a href="tel:07957438541" class="flex items-center justify-center gap-2 bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition">
+                                <i data-lucide="phone" class="h-4 w-4"></i>
+                                07957 438541
+                            </a>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-4 -left-4 bg-primary-500 text-white p-4 rounded-xl shadow-lg z-20 animate-bounce">
+                        <p class="font-bold text-sm">Emergency?</p>
+                        <p class="text-xs">Call now!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="bg-primary-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="flex flex-col items-center gap-2">
+                    <i data-lucide="clock" class="h-8 w-8 text-blue-300"></i>
+                    <p class="font-bold text-lg">24/7 Available</p>
+                    <p class="text-sm text-blue-200">Emergency Service</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i data-lucide="shield-check" class="h-8 w-8 text-blue-300"></i>
+                    <p class="font-bold text-lg">Fully Insured</p>
+                    <p class="text-sm text-blue-200">Peace of Mind</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i data-lucide="badge-pound-sterling" class="h-8 w-8 text-blue-300"></i>
+                    <p class="font-bold text-lg">Fair Pricing</p>
+                    <p class="text-sm text-blue-200">No Hidden Fees</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <i data-lucide="map-pin" class="h-8 w-8 text-blue-300"></i>
+                    <p class="font-bold text-lg">Local Expert</p>
+                    <p class="text-sm text-blue-200">Chester Based</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="Jack at work" class="w-full h-auto object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary-900/80 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                            <p class="font-bold text-xl">Jack</p>
+                            <p class="text-blue-200">Your Local Plumbing Expert</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-xs hidden md:block">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-green-100 p-3 rounded-full">
+                                <i data-lucide="thumbs-up" class="h-6 w-6 text-green-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-2xl text-secondary">100%</p>
+                                <p class="text-gray-600 text-sm">Customer Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="inline-block bg-primary-100 text-primary-700 px-4 py-1 rounded-full text-sm font-semibold">
+                        About JM Plumbing
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary">
+                        Meet Jack – Your Trusted, <span class="text-primary-600">Honest</span> Local Plumber
+                    </h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Hi, I'm Jack, the owner of JM Plumbing. With over 10 years of experience serving Chester and the surrounding areas, I've built my business on a simple promise: <strong>honest work at fair prices</strong>.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        I understand that plumbing problems can be stressful, which is why I prioritize clear communication, punctuality, and getting the job done right the first time. No hidden fees, no unnecessary upsells – just reliable plumbing you can count on.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-primary-100 p-2 rounded-lg flex-shrink-0">
+                                <i data-lucide="award" class="h-5 w-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-secondary">Fully Qualified</p>
+                                <p class="text-sm text-gray-600">Gas Safe Registered</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="bg-primary-100 p-2 rounded-lg flex-shrink-0">
+                                <i data-lucide="repeat" class="h-5 w-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-secondary">Repeat Customers</p>
+                                <p class="text-sm text-gray-600">70% come back to us</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="bg-primary-100 p-2 rounded-lg flex-shrink-0">
+                                <i data-lucide="zap" class="h-5 w-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-secondary">Fast Response</p>
+                                <p class="text-sm text-gray-600">Usually same day</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="bg-primary-100 p-2 rounded-lg flex-shrink-0">
+                                <i data-lucide="heart-handshake" class="h-5 w-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-secondary">Honest Advice</p>
+                                <p class="text-sm text-gray-600">Only what you need</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block bg-primary-100 text-primary-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                    Our Services
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    Professional Plumbing Services in Chester
+                </h2>
+                <p class="text-gray-600 text-lg">
+                    From emergency repairs to complete bathroom installations, Jack provides comprehensive plumbing solutions for your home or business.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Emergency Plumbing -->
+                <div class="service-card bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-primary-300 group">
+                    <div class="w-14 h-14 bg-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors">
+                        <i data-lucide="alert-circle" class="h-7 w-7 text-red-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Emergency Plumbing 24/7</h3>
+                    <p class="text-gray-600 mb-4">
+                        Burst pipes, severe leaks, or no hot water? We offer round-the-clock emergency plumbing services across Chester with rapid response times.
+                    </p>
+                    <a href="tel:07957438541" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+                        Call Emergency Line <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+
+                <!-- Radiator Repairs -->
+                <div class="service-card bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-primary-300 group">
+                    <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-600 transition-colors">
+                        <i data-lucide="thermometer" class="h-7 w-7 text-orange-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Radiator Repairs & Heating</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cold radiators, heating system balancing, power flushing, and thermostat repairs. Keep your home warm and your heating efficient.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+                        Book Heating Service <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+
+                <!-- Boiler Services -->
+                <div class="service-card bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-primary-300 group">
+                    <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                        <i data-lucide="flame" class="h-7 w-7 text-blue-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Boiler Installation & Repair</h3>
+                    <p class="text-gray-600 mb-4">
+                        Boiler breakdowns, servicing, and new installations. Gas Safe registered engineer ensuring your boiler runs safely and efficiently.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+                        Get Boiler Quote <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+
+                <!-- Leak Detection -->
+                <div class="service-card bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-primary-300 group">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-cyan-600 transition-colors">
+                        <i data-lucide="search" class="h-7 w-7 text-cyan-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Leak Detection & Repair</h3>
+                    <p class="text-gray-600 mb-4">
+                        Hidden leaks causing damage? We use advanced detection methods to find and fix leaks quickly, minimizing disruption to your property.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+                        Find That Leak <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+
+                <!-- Bathroom Installation -->
+                <div class="service-card bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-primary-300 group">
+                    <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                        <i data-lucide="bath" class="h-7 w-7 text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Bathroom Installation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Complete bathroom refurbishments, new suite installations, shower fitting, and tiling. Transform your bathroom with expert craftsmanship.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+                        Start Your Project <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+
+                <!-- General Plumbing -->
+                <div class="service-card bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 hover:border-primary-300 group">
+                    <div class="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-green-600 transition-colors">
+                        <i data-lucide="wrench" class="h-7 w-7 text-green-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">General Plumbing</h3>
+                    <p class="text-gray-600 mb-4">
+                        Tap replacements, toilet repairs, pipework, outside taps, and maintenance. No job too small – from dripping taps to complete repiping.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-primary-600 font-semibold hover:text-primary-700">
+                        Request Service <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-primary-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                        Why Chester Residents Choose JM Plumbing
+                    </h2>
+                    <p class="text-blue-100 text-lg mb-8">
+                        We're not just another plumbing company. We're your neighbors, committed to keeping Chester's homes running smoothly with honest, reliable service.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="star" class="h-6 w-6 text-yellow-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-1">5-Star Rated Service</h4>
+                                <p class="text-blue-100">Consistently rated 5 stars by over 40 local customers. Check our reviews to see why Chester trusts us.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="badge-pound-sterling" class="h-6 w-6 text-green-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-1">Transparent Pricing</h4>
+                                <p class="text-blue-100">Fixed quotes before we start. No hidden charges, no overtime fees, and no call-out charges for repairs.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="clock" class="h-6 w-6 text-blue-300"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-1">Always On Time</h4>
+                                <p class="text-blue-100">We respect your time. If we're running late, we'll call. 1-hour time slots so you're not waiting all day.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center">
+                                <i data-lucide="shield" class="h-6 w-6 text-red-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-1">Fully Guaranteed</h4>
+                                <p class="text-blue-100">All work comes with a 12-month guarantee. If something isn't right, we'll return and fix it free of charge.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-secondary mb-6">Get Your Free Quote Today</h3>
+                        <form id="quoteForm" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="John">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                    <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="Smith">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="07XXX XXXXXX">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Service Required</label>
+                                <select required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition">
+                                    <option value="">Select a service...</option>
+                                    <option value="emergency">Emergency Repair</option>
+                                    <option value="boiler">Boiler Service/Repair</option>
+                                    <option value="heating">Radiator/Heating Issue</option>
+                                    <option value="leak">Leak Detection</option>
+                                    <option value="bathroom">Bathroom Installation</option>
+                                    <option value="general">General Plumbing</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Message (Optional)</label>
+                                <textarea rows="3" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="Tell us about your plumbing issue..."></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 rounded-lg transition shadow-lg flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="h-5 w-5"></i>
+                                Request Free Quote
+                            </button>
+                        </form>
+                        <div id="formSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-center">
+                            <i data-lucide="check-circle" class="h-5 w-5 inline mr-2"></i>
+                            Thank you! Jack will call you back within 30 minutes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-primary-100 text-primary-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                    Customer Reviews
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">
+                    What Our Customers Say
+                </h2>
+                <div class="flex items-center justify-center gap-2 mb-4">
+                    <div class="flex text-yellow-400 text-2xl">
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                        <i data-lucide="star" class="h-8 w-8 fill-current"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-secondary ml-2">5.0</span>
+                </div>
+                <p class="text-gray-600">Based on 40+ verified reviews from local Chester residents</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Jack came out at 11pm when our boiler packed up in winter. Fixed it within the hour and didn't charge ridiculous emergency rates. Absolute lifesaver!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center font-bold text-primary-700">SM</div>
+                        <div>
+                            <p class="font-semibold text-secondary">Sarah M.</p>
+                            <p class="text-sm text-gray-500">Hoole, Chester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Finally a plumber who turns up on time! Jack installed our new bathroom suite and the workmanship is excellent. Tidy, polite, and fair pricing. Highly recommend."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center font-bold text-primary-700">DT</div>
+                        <div>
+                            <p class="font-semibold text-secondary">David T.</p>
+                            <p class="text-sm text-gray-500">Boughton, Chester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Had a persistent leak that two other plumbers couldn't fix. Jack found the source immediately and sorted it. Honest guy who knows his stuff. Will use again."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center font-bold text-primary-700">RJ</div>
+                        <div>
+                            <p class="font-semibold text-secondary">Rebecca J.</p>
+                            <p class="text-sm text-gray-500">Handbridge, Chester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Jack serviced our boiler and fixed a radiator that wasn't heating up. Very professional, explained everything clearly, and the price was exactly as quoted."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center font-bold text-primary-700">MP</div>
+                        <div>
+                            <p class="font-semibold text-secondary">Mark P.</p>
+                            <p class="text-sm text-gray-500">Upton, Chester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Replaced all our old radiators with modern ones. Jack gave great advice on sizing and placement. House is so much warmer now. Great job!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center font-bold text-primary-700">LC</div>
+                        <div>
+                            <p class="font-semibold text-secondary">Lisa C.</p>
+                            <p class="text-sm text-gray-500">Saltney, Chester</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                        <i data-lucide="star" class="h-4 w-4 fill-current"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4">"Emergency call-out on a Sunday evening for a burst pipe. Jack was here within 30 minutes and stopped the flooding. Cannot recommend highly enough!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary-100 rounded-full flex items-center justify-center font-bold text-primary-700">AW</div>
+                        <div>
+                            <p class="font-semibold text-secondary">Andrew W.</p>
+                            <p class="text-sm text-gray-500">Blacon, Chester</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency CTA Banner -->
+    <section class="bg-red-600 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="bg-white/20 p-4 rounded-full animate-pulse">
+                        <i data-lucide="phone-call" class="h-8 w-8"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold">24/7 Emergency Plumbing</h3>
+                        <p class="text-red-100">Burst pipe? No hot water? We're here to help right now.</p>
+                    </div>
+                </div>
+                <a href="tel:07957438541" class="bg-white text-red-600 px-8 py-4 rounded-full font-bold text-xl hover:bg-gray-100 transition shadow-lg flex items-center gap-3 animate-bounce">
+                    <i data-lucide="phone" class="h-6 w-6"></i>
+                    07957 438541
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-secondary mb-4">Areas We Cover</h2>
+                <p class="text-gray-600">Providing expert plumbing services throughout Chester and surrounding areas</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Chester City Centre</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Hoole</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Handbridge</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Boughton</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Upton</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Blacon</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Saltney</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Christleton</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Tarvin</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Waverton</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">Kelsall</div>
+                <div class="bg-gray-50 p-4 rounded-lg font-medium text-gray-700">& Surrounding Areas</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <div class="inline-block bg-primary-100 text-primary-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                        Contact Us
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-6">
+                        Get In Touch With Jack
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-8">
+                        Whether it's an emergency or you're planning a bathroom renovation, I'm here to help. Call me directly for the fastest response, or fill out the form and I'll get back to you within the hour.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary-600 text-white p-3 rounded-lg flex-shrink-0">
+                                <i data-lucide="phone" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg">Phone</h4>
+                                <p class="text-gray-600 mb-1">Available 24/7 for emergencies</p>
+                                <a href="tel:07957438541" class="text-primary-600 font-bold text-xl hover:underline">07957 438541</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary-600 text-white p-3 rounded-lg flex-shrink-0">
+                                <i data-lucide="map-pin" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg">Address</h4>
+                                <p class="text-gray-600">
+                                    32 Burnham Rd<br>
+                                    Chester, CH4 8EX<br>
+                                    United Kingdom
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="bg-primary-600 text-white p-3 rounded-lg flex-shrink-0">
+                                <i data-lucide="clock" class="h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-secondary text-lg">Opening Hours</h4>
+                                <p class="text-gray-600">
+                                    <span class="font-semibold text-primary-600">Open 24 Hours</span><br>
+                                    Emergency services available round the clock<br>
+                                    Standard appointments: Mon-Sat 8am-6pm
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+                    <h3 class="text-2xl font-bold text-secondary mb-6">Send Us a Message</h3>
+                    <form id="contactForm" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="Your name">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-1">Phone *</label>
+                                <input type="tel" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="Your phone number">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Service Type</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition">
+                                <option value="">Select service...</option>
+                                <option value="emergency">Emergency Repair</option>
+                                <option value="boiler">Boiler Service</option>
+                                <option value="heating">Heating/Radiator</option>
+                                <option value="leak">Leak Detection</option>
+                                <option value="bathroom">Bathroom Install</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 outline-none transition" placeholder="Describe your plumbing issue..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary-600 hover:bg-primary-700 text-white font-bold py-4 rounded-lg transition shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                    <div id="contactSuccess" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-lg text-center">
+                        <i data-lucide="check-circle" class="h-5 w-5 inline mr-2"></i>
+                        Message sent! Jack will contact you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="bg-primary-600 text-white p-2 rounded-lg">
+                            <i data-lucide="droplets" class="h-6 w-6"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">JM Plumbing</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Reliable, honest plumbing services in Chester. Available 24/7 for all your emergency and general plumbing needs.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition">
+                            <i data-lucide="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition">
+                            <i data-lucide="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="bg-white/10 hover:bg-white/20 p-2 rounded-lg transition">
+                            <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About Jack</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition">Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition">Emergency Plumbing</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Boiler Repair</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Radiator Services</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Leak Detection</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Bathroom Install</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="h-5 w-5 text-primary-500"></i>
+                            <a href="tel:07957438541" class="hover:text-white transition">07957 438541</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="h-5 w-5 text-primary-500 flex-shrink-0 mt-0.5"></i>
+                            <span>32 Burnham Rd, Chester,<br>CH4 8EX, UK</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="clock" class="h-5 w-5 text-primary-500"></i>
+                            <span>Open 24/7</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    © 2024 JM Plumbing. All rights reserved. Gas Safe Registered Engineer.
+                </p>
+                <div class="flex items-center gap-2 text-gray-400 text-sm">
+                    <i data-lucide="star" class="h-4 w-4 text-yellow-400 fill-current"></i>
+                    <span>5.0 rating from 40+ reviews</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile Call Button -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-50 flex gap-3">
+        <a href="tel:07957438541" class="flex-1 bg-primary-600 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="h-5 w-5"></i>
+            Call Now
+        </a>
+        <a href="#contact" class="flex-1 bg-secondary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+            <i data-lucide="mail" class="h-5 w-5"></i>
+            Quote
+        </a>
+    </div>
+    
+    <!-- Mobile Spacer -->
+    <div class="md:hidden h-24"></div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('sticky-nav');
+            } else {
+                navbar.classList.remove('sticky-nav');
+            }
+        });
+
+        // Form Handling
+        const quoteForm = document.getElementById('quoteForm');
+        const formSuccess = document.getElementById('formSuccess');
+        
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simulate form submission
+            quoteForm.style.display = 'none';
+            formSuccess.classList.remove('hidden');
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        const contactSuccess = document.getElementById('contactSuccess');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // Simulate form submission
+            contactForm.style.display = 'none';
+            contactSuccess.classList.remove('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = `all 0.6s ease ${index * 0.1}s`;
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
